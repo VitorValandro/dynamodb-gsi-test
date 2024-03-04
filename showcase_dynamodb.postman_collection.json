@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "5c7a425d-bbc1-42d4-af06-18c4f7156cc6",
+		"name": "showcase dynamodb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16423126"
+	},
+	"item": [
+		{
+			"name": "create table",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/create-table",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"create-table"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete table",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/delete-table",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"delete-table"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fill table",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/fill-table",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"fill-table"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/get-all-items",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"get-all-items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "use case 1: fetch for app",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/fetch-for-app?accountId=456&scheduledDay=2024-09-19",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"fetch-for-app"
+					],
+					"query": [
+						{
+							"key": "accountId",
+							"value": "456"
+						},
+						{
+							"key": "scheduledDay",
+							"value": "2024-09-19"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "use case 2: fetch for push notifications",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/fetch-for-push-notifications?scheduledDateTime=2024-09-18T12:45:00.000Z",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"fetch-for-push-notifications"
+					],
+					"query": [
+						{
+							"key": "scheduledDateTime",
+							"value": "2024-09-18T12:45:00.000Z"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "use case 2 - alternative: fetch for push notifications",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/fetch-for-push-notifications-ALTERNATIVE?scheduledDateTime=2024-09-18T12:00:00.000Z",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"fetch-for-push-notifications-ALTERNATIVE"
+					],
+					"query": [
+						{
+							"key": "scheduledDateTime",
+							"value": "2024-09-18T12:00:00.000Z"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
